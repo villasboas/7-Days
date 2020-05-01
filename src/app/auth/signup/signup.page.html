@@ -2,8 +2,8 @@
   <div class="login-header">
     <img src="assets/logo_white.png" />
   </div>
-  <form [formGroup]="signupForm">
-    <h1>Entrar</h1>
+  <form (ngSubmit)="onSubmit()" [formGroup]="signupForm">
+    <h1>Cadastrar</h1>
     <hr />
     <ion-item>
       <ion-label position="stacked">E-mail</ion-label>
@@ -25,11 +25,12 @@
       mode="ios"
       size="large"
       expand="block"
+      type="submit"
       >Cadastrar</ion-button
     >
     <br />
     <div class="ion-text-center">
-      Já tem uma conta? <a href="">Voltar para o login!</a>
+      Já tem uma conta? <a routerLink="/login">Voltar para o login!</a>
     </div>
   </form>
 </ion-content>

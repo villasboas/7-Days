@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "days-dca6f": {
+      "hosting": {
+        "app": [
+          "days-dca6f"
+        ]
+      }
+    }
+  }
+}
