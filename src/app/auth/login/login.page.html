@@ -1,0 +1,28 @@
+<ion-content padding="true">
+  <div class="login-header">
+    <img src="assets/logo_white.png" />
+  </div>
+  <form [formGroup]="loginForm">
+    <h1>Entrar</h1>
+    <hr />
+    <ion-item>
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+    <ion-button
+      [disabled]="loginForm.invalid"
+      mode="ios"
+      size="large"
+      expand="block"
+      >Entrar</ion-button
+    >
+    <br />
+    <div class="ion-text-center">
+      Ainda não tem conta? <a href="">Cadastre-se!</a>
+    </div>
+  </form>
+</ion-content>
